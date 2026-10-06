@@ -1,0 +1,13 @@
+{
+  "name": "magic-comet-poc",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "npm run build && python3 -m http.server 4175 --bind 127.0.0.1",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "test:browser": "node tests/browser-check.mjs"
+  },
+  "devDependencies": { "typescript": "^5.9.3", "ws": "^8.18.0" }
+}

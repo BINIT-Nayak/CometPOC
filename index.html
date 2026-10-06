@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Magic Comet · Motion study</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <main>
+    <header><a class="brand" href="./"><span class="brand-icon">✳</span> MOTION LAB <span class="divider">/</span> 001</a><span class="badge"><i></i> Canvas experiment</span></header>
+    <section class="intro"><div><p class="eyebrow">PROCEDURAL EFFECTS</p><h1>A little <em>magic.</em></h1><p class="subtitle">Light in motion. A luminous head, a fleeting trail, a scatter of sparks.</p></div><span class="edition">MAGIC COMET<br>INTERACTIVE STUDY — 01</span></section>
+    <section class="stage" id="stage" aria-label="Interactive magic comet preview">
+      <div class="stage-top"><span><i></i> LIVE CANVAS</span><span id="mode-label">Click anywhere to send a comet</span></div>
+      <canvas id="canvas" aria-label="Procedurally animated glowing comets"></canvas>
+      <div class="origin"><span>+</span> EMISSION POINT</div><div class="destination">✧</div>
+      <div class="stage-bottom"><span id="stage-caption">01 / EMERALD</span><span>100% procedural <b>·</b> No sprites</span></div>
+    </section>
+    <section class="controls" aria-label="Animation controls"><div class="presets"><button data-preset="green" class="selected"><i style="--swatch:#49ff78"></i>Emerald</button><button data-preset="blue"><i style="--swatch:#56baff"></i>Glacier</button><button data-preset="purple"><i style="--swatch:#c58aff"></i>Amethyst</button><button data-preset="gold"><i style="--swatch:#ffcf68"></i>Gold dust</button></div><button id="burst">✧ &nbsp; Launch all</button></section>
+    <section class="details"><div><span>TRAIL LENGTH</span><label><input id="trail" type="range" min="30" max="300" value="150"><output id="trail-value">150 px</output></label></div><div><span>FLIGHT DURATION</span><label><input id="duration" type="range" min="500" max="2400" step="100" value="1400"><output id="duration-value">1.4 s</output></label></div><div class="playback"><span>PLAYBACK</span><button id="replay">↗ &nbsp; Replay comet</button><label class="loop"><input id="loop" type="checkbox" checked> Auto replay</label></div></section>
+    <footer><span>Quadratic curves. Additive light. A moment of wonder.</span><span>CANVAS 2D <b> / </b> TYPESCRIPT</span></footer>
+  </main><script type="module" src="dist/demo.js"></script>
+</body></html>
