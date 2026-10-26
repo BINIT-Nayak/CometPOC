@@ -1,5 +1,7 @@
 # Magic comet — first working version
 
+Deployed: https://cheerful-platypus-ddcaa2.netlify.app/
+
 A procedural Canvas 2D + TypeScript effect. The supplied image was used only as a visual reference. No sprite assets, pixel sampling, external fonts, animation libraries, or WebGL are used.
 
 ## Run
